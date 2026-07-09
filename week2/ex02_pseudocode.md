@@ -16,11 +16,38 @@ OUTPUT grade
 
 END
 
+---
+
+START
+
+    INPUT a,b
+
+    IF a > b THEN
+
+    OUTPUT a
+
+    ELSE
+
+    OUTPUT b
+
+    END IF
+
+END
 
 ---
 
+START
 
+    INPUT N
 
-BEGIN
+    i = 1
 
-INPUT รับ a และ b
+    WHILE i <= N DO
+
+    OUTPUT N
+
+    i = i + 1
+
+    END WHILE
+
+END

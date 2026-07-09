@@ -12,7 +12,11 @@ flowchart TD
 ```mermaid
 flowchart TD
 	Start([Start]) --> Input[/รับ current_xp, xp_needed,level/]
-	Input --> Calc{current_xp >= xp_needed?}
-	Calc --> |Yes| D1[level = level + 1]
-
+	Input --> D1{current_xp >= xp_needed?}
+	D1 --> |Yes| N1["level = level + 1"]
+	N1 --> Xp1[" xp_needed = xp_needed x 1.5 "]
+	Xp1 --> Xp2["current_xp = 0"]
+	Xp2 --> S[/แสดง level และ current_xp /]
+	D1 --> |No| S[/แสดง level และ current_xp /]
+	S --> End([End])
 ```
