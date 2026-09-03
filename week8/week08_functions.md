@@ -1,4 +1,3 @@
-
 # Week 8 — Functions Reference
 
 **Function Reference — `ex02_game_utils.c`**
