@@ -5,6 +5,7 @@ int calculateDamage(int attack, int defense);
 int isCriticalHit(int roundNumber);
 void displayHP(int current, int max);
 void printCombatResult(int round, int damage, int isCrit);
+ 
 
 int main(void) {
     int attack      = 80;
